@@ -1,0 +1,76 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat&display=swap);
+
+
+body{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: white;
+    padding: auto;
+}
+
+h1, h2, h3, h4, h5{
+  font-weight: 300;
+}
+
+.description{
+  margin-top: 0;
+}
+
+.arrow{
+  width: 5%;
+}
+
+
+/* HEADER */
+.header {
+    margin: 2.5rem;
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .home-logo {
+    cursor: pointer;
+    object-fit: cover;
+    height: 60px;
+    width: auto;
+  }
+  
+  .nav-bar {
+    display: flex;
+    margin-left: auto; /* Aligns the nav-bar to the right */
+  }
+  
+  .page-option {
+    font-size: 2vmin;
+    margin-left: 3rem;
+    text-decoration: none;
+    color: black;
+  }
+
+/* FOOTER */
+.footer{
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+ }
+
+ .footer-button{
+    display: inline-block;
+    font-size: small; 
+    margin-top: 2rem;
+ }
+
+ 
+
+ 
+ .center-container{ 
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 75vh;
+}
