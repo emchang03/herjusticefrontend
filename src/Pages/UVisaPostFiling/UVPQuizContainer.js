@@ -88,40 +88,41 @@ const UVPQuizContainer = () =>{
         setQuestionIndex((prev)=>prev-1);
     }
 
-    if(!quizFinished){
+    
         return(
             <div className="launch-quiz">
                 <h1>U-Visa Post Filing Case Best Estimate</h1>
-                <p className="long-desc">Answer these questions to the best of your ability for our best prediction of what might be going on with your case. This is not a definitive answer, just a best estimate.</p>
+                <p className="long-desc">Answer these questions to the best of your ability for our best prediction of what might be going on with your case. This is not a definitive answer, just a best estimate.  <span style={{fontWeight: "bold"}}>Please note that you cannot go back to change your answers. If you make a mistake, restart the quiz.</span></p>
 
-                <UVPQuestion 
-                    question={questions[questionIndex]}
-                    handleChange={handleChange}
-                    userInput={userInput[questionIndex]}
-                />
+                {!quizFinished ? (
+                <div>
+                    <UVPQuestion 
+                        question={questions[questionIndex]}
+                        handleChange={handleChange}
+                        userInput={userInput[questionIndex]}
+                    />
 
-                {questionIndex != 0 ?  <button onClick={handlePrev}>Previous</button> : <></>}
-                <button onClick={handleNext}>Next</button>
-                <br />
-                <Link className="link" to='/uvisa-postfiling'>Back to U-Visa Post Filing Page</Link>
+                    {/* {questionIndex != 0 ?  <button onClick={handlePrev}>Previous</button> : <></>} */}
+                    <button onClick={handleNext}>Next</button>
+                    <br />
+                </div>
+                ) : (
+                <div>
+                    <UVPOutput
+                    response = {answers[answerIndex]}
+                    setQuestionIndex = {setQuestionIndex}
+                    setQuizFinished = {setQuizFinished}
+                    setUserInput = {setUserInput}
+                    />
+                </div>
+                )}
+                <div className="link">
+                    <Link className="link" to='/uvisa-filing'>Back to U-Visa Page</Link>
+                </div>
             </div>
         )
-    }
-    else{
-        return(
-            <div className="launch-quiz">
-                <h1>U-Visa Post Filing Case Best Estimate</h1>
-                <p className="long-desc">Answer these questions to the best of your ability for our best prediction of what might be going on with your case. This is not a definitive answer, just a best estimate.</p>
-                <UVPOutput
-                response = {answers[answerIndex]}
-                setQuestionIndex = {setQuestionIndex}
-                setQuizFinished = {setQuizFinished}
-                setUserInput = {setUserInput}
-                />
-                <Link className="link" to='/uvisa-postfiling'>Back to U-Visa Post Filing Page</Link>
-            </div>
-        )
-    }
+
+    
 
 
 

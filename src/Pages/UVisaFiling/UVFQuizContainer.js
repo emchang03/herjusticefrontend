@@ -50,7 +50,7 @@ const UVFQuizContainer = () => {
         {
             // INDEX 2
             id: 2,
-            a: 'You can now periodically check the USCIS Processing Times to see the updates in your I-918 processing. Expect your attorney to check in every 3-4 months. Feel free to check out the "U-Visa Post Filing" page for more information.'
+            a: 'You can now periodically check the USCIS Processing Times to see the updates in your I-918 processing. Expect your attorney to check in every 3-4 months. You are also eligible to use the quiz for those who have already filed their U-Visa forms.'
         },
         {
             // INDEX 3
@@ -87,6 +87,9 @@ const UVFQuizContainer = () => {
         if(userInput.length < questionIndex+1){
             return;
         }
+        // if(curAnswer === "EC"){
+        //     setCurAnswer(userInput[questionIndex+1]);
+        //  }
         else if(questions[questionIndex].id === 0){ // final branch for left side 
             if(curAnswer === "yes"){
                 setQuestionIndex((prev)=> prev+1);
@@ -124,43 +127,44 @@ const UVFQuizContainer = () => {
         }
     };
 
-    const handlePrev = () => {
-        setQuizFinished(false);
-        setQuestionIndex((prev)=>prev-1);
-    }
+    // const handlePrev = () => {
+    //     setQuizFinished(false);
+    //     setQuestionIndex((prev)=>prev-1);
+    //     setCurAnswer("EC"); // "edge case" has clicked an answer but hasn't clicked "next"
+    //     // setAnswerIndex((prev)=>prev-1);
+    //     // setCurAnswer("blank");
+    // }
 
 
-    if(!quizFinished){
-        return(
-            <div className="launch-quiz">
-                <h1>U-Visa Filing Case Best Estimate</h1>
-                <p className="long-desc">Answer these questions to the best of your ability for our best prediction of what might be going on with your case. This is not a definitive answer, just a best estimate.</p>
-                <UVFQuestion 
-                    question = {questions[questionIndex]}
-                    handleChange = {handleChange}
-                    userInput={userInput[questionIndex]}
-                />
-                {questionIndex != 0 ?  <button onClick={handlePrev}>Previous</button> : <></>}
-                <button onClick={handleNext}>Next</button>
-                <br />
-                <Link className="link" to='/uvisa-filing'>Back to U-Visa Filing Page</Link>
-            </div>
-        
-        );
-    }
-    else return(
+    return(
         <div className="launch-quiz">
             <h1>U-Visa Filing Case Best Estimate</h1>
-            <p className="long-desc">Answer these questions to the best of your ability for our best prediction of what might be going on with your case. This is not a definitive answer, just a best estimate.</p>
-            <UVFOutput
-            response = {answers[answerIndex]}
-            setQuestionIndex = {setQuestionIndex}
-            setQuizFinished = {setQuizFinished}
-            setUserInput = {setUserInput}
-            />
-            <Link className="link" to='/uvisa-filing'>Back to U-Visa Filing Page</Link>
+            <p className="long-desc">Answer these questions to the best of your ability for our best prediction of what might be going on with your case. This is not a definitive answer, just a best estimate. <span style={{fontWeight: "bold"}}>Please note that you cannot go back to change your answers. If you make a mistake, restart the quiz.</span></p>
+            {!quizFinished ? (
+                <div>
+                    <UVFQuestion 
+                        question = {questions[questionIndex]}
+                        handleChange = {handleChange}
+                        userInput={userInput[questionIndex]}
+                    />
+                    {/* {questionIndex != 0 ?  <button onClick={handlePrev}>Previous</button> : <></>} */}
+                    <button onClick={handleNext}>Next</button>
+                    <br />
+                </div>
+            ) : (
+                <div>
+                    <UVFOutput
+                    response = {answers[answerIndex]}
+                    setQuestionIndex = {setQuestionIndex}
+                    setQuizFinished = {setQuizFinished}
+                    setUserInput = {setUserInput}
+                    />
+                </div>
+            )}
+            <div className="link">
+                <Link className="link" to='/uvisa-filing'>Back to U-Visa Page</Link>
+            </div>
         </div>
-        
     )
 }
 

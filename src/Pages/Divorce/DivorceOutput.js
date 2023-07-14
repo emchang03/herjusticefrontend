@@ -12,9 +12,23 @@ const DivorceOutput = ({response, setQuestionIndex, setQuizFinished, setUserInpu
     }
     return(
         <div className="question-box">
-            <h3>Our calculations: </h3>
-            <p>{response.a}</p>
-            <br/>
+            <div>
+                <h3>Our calculations: </h3>
+                <p>{response.a}</p>
+            </div>
+
+            {response.delays!== null && (
+            <div>
+                <h3>Potential reasons for delay: </h3>
+                {response.delays.map((delay)=>{
+                    return(
+                        <p>{delay}</p>
+                    )
+                })}
+            </div>
+            )}
+            
+            
             <button onClick={handleClick}>Restart Quiz</button>
         </div>
 

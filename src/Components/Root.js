@@ -7,10 +7,13 @@ import Header from './Header'
 function Root() {
 
   return (
-    <div className='main'>
-     <Header />
+
+    
+ <div className='main'>
+ <Header />
      <Outlet />   
     </div>
+   
   );
 }
 

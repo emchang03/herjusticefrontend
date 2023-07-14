@@ -65,7 +65,7 @@ const UVPQuestion = ({question, handleChange, userInput}) => {
                         name={question.id} 
                         onChange={handleChange} 
                         checked={userInput === "less"}
-                        value="no"
+                        value="less"
                     /> No, but it has been less than 5 years
                 </label>      
 
