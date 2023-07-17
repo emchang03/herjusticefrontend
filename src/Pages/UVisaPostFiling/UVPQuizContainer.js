@@ -24,7 +24,9 @@ const UVPQuizContainer = () =>{
 
     const answers=[
         {
-            a: `This is a preliminary decision, not a final decision, on your case. It means that USCIS believes you are eligible for U-Nonimmigrant status, but they can still ask you for further information. It is not known how much longer you will have to wait for a final decision. It could be 1-3 years. You should check in with your attorney every 6 months. Expect an Employment Authorization Document (or work permit), valid for 4 years. You are now in deferred action status for the next 4 years. Please reach out to your attorney with any questions.`,
+            a: `This is a preliminary decision on your case. The USCIS believes you are eligible for U-Nonimmigrant status, but they can still ask you for further information.`,
+            a1: `It is not known how much longer you will have to wait for a final decision. It could be 1-3 years. You should check in with your attorney every 6 months.`,
+            a2: `Expect an Employment Authorization Document (or work permit), valid for 4 years. You are now in deferred action status for the next 4 years. Please reach out to your attorney with any questions.`,
             id: 0
         },
         {

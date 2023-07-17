@@ -16,6 +16,8 @@ const UVPOutput = ({response, setQuestionIndex, setQuizFinished, setUserInput}) 
         <div className="question-box">
             <h3>Our calculations: </h3>
             <p>{response.a}</p>
+            {response.a1 ? <p>{response.a1}</p> : <></>}
+            {response.a2 ? <p>{response.a2}</p> : <></>}
             <br/>
             <button onClick={handleClick}>Restart Quiz</button>
         </div>        

@@ -86,20 +86,22 @@ h1, h2, h3, h4, h5{
 }
 
 .toggle-click{
-  width: 50rem;
+  width: 90%;
   font-size: 1rem;
   background-color:#D9D9D9;
   padding: 1%;
   /* outline: 1px solid black; */
   border-radius: 5px;
+  margin: 0 auto;
 }
 
 .toggle-expand{
-  width: 50rem;
+  width: 90%;
   padding: 1%;
   border-radius: 5px;
   background-color:#D9D9D9;
   /* outline: 1px solid black; */
+  margin: 0 auto;
 }
 
 .faq{
@@ -113,8 +115,6 @@ h1, h2, h3, h4, h5{
   margin-top: 3rem;
   margin-bottom: 3rem;
   padding-bottom: 3rem;
-  /* width: 75%;
-  height: 50%; */
   align-items: center;
 }
 
