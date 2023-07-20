@@ -1,6 +1,5 @@
 import React from "react";
 // import QuizContainer from "./QuizContainer";
-import infographic from "/src/assets/divorce.png";
 import {useNavigate } from "react-router-dom";
 import TimelineContainer from "../../Components/TimelineContainer";
 const Divorce  = () => {
@@ -22,7 +21,7 @@ const Divorce  = () => {
       number: 3,
       title: "Service of Process",
       desc: "You and your attorney will prepare to serve your spouse.",
-      duration: "Around 120 days"
+      duration: "From 1 week to 120 days"
     },
     {
       number: 4,
@@ -32,9 +31,15 @@ const Divorce  = () => {
     },
     {
       number: 5,
-      title: "Final documents",
-      desc: "After you sign final documents, your attorney will prepare and file them before you wait for a response from the court",
-      duration: "Around 2-3 months"
+      title: "Prepare Final Documents",
+      desc: "Your attorney will prepare final papers for you to sign.",
+      duration: "Around 1-2 months"
+    },
+    {
+      number: 6,
+      title: "Court Processing",
+      desc: "After filing your final papers, the court will process the final papers until your attorney receives a Judgement of Divorce.",
+      duration: "Around 1 year"
     },
     {
       number: 6,

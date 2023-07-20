@@ -66,7 +66,7 @@ const UVPQuestion = ({question, handleChange, userInput}) => {
                         onChange={handleChange} 
                         checked={userInput === "less"}
                         value="less"
-                    /> No, but it has been less than 5 years
+                    /> No, but it has been less than 5 years since I filed
                 </label>      
 
                 <label>
@@ -77,7 +77,7 @@ const UVPQuestion = ({question, handleChange, userInput}) => {
                         onChange={handleChange} 
                         checked={userInput === "more"}
                         value="more"
-                    /> No, and it has been 5+ years
+                    /> No, and it has been 5+ years since I filed
                 </label>                          
             </div>
         </div>

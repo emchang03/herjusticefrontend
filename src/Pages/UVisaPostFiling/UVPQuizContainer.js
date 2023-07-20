@@ -24,17 +24,17 @@ const UVPQuizContainer = () =>{
 
     const answers=[
         {
-            a: `This is a preliminary decision on your case. The USCIS believes you are eligible for U-Nonimmigrant status, but they can still ask you for further information.`,
+            a: `This is a preliminary decision on your case. USCIS believes you are eligible for U-Nonimmigrant status, but they can still ask you for further information.`,
             a1: `It is not known how much longer you will have to wait for a final decision. It could be 1-3 years. You should check in with your attorney every 6 months.`,
-            a2: `Expect an Employment Authorization Document (or work permit), valid for 4 years. You are now in deferred action status for the next 4 years. Please reach out to your attorney with any questions.`,
+            a2: `Expect an Employment Authorization Document (or work permit), valid for 4 years. You are now in Deferred Action status for the next 4 years. Please reach out to your attorney with any questions.`,
             id: 0
         },
         {
-            a: "Check in with your attornet to make sure your response is submitted by the set deadline. There is the potential to receive a Notice of Intent to Deny if you do not comply with the Request for Evidence. See your attorney with what to do in such a situation.",
+            a: "Check in with your attorney to make sure your response is submitted by the set deadline. There is the potential to receive a Notice of Intent to Deny if you do not comply with the Request for Evidence. See your attorney with what to do in such a situation.",
             id: 1
         },
         {
-            a: "It currently takes over five years from the date of filing your U-Visa petition to get any decision on your case. You can check in with your attorney every 3-4 months for updates.",
+            a: "It currently takes over 5 years from the date of filing your U-Visa petition to get any decision on your case. You can check in with your attorney every 3-4 months for updates.",
             id: 2
         },
         {
@@ -93,8 +93,8 @@ const UVPQuizContainer = () =>{
     
         return(
             <div className="launch-quiz">
-                <h1>U-Visa Post Filing Case Best Estimate</h1>
-                <p className="long-desc">Answer these questions to the best of your ability for our best prediction of what might be going on with your case. This is not a definitive answer, just a best estimate.  <span style={{fontWeight: "bold"}}>Please note that you cannot go back to change your answers. If you make a mistake, restart the quiz.</span></p>
+                <h1>What might be happening with my U-Visa case after filing?</h1>
+                <p className="long-desc">Answer these questions to the best of your ability for our best prediction of what might be going on with your case. This is not a definitive answer, just a best estimate.  <span style={{fontWeight: "bold"}}>Please note that you cannot go back to change your answers. If you make a mistake, refresh the page to restart the quiz.</span></p>
 
                 {!quizFinished ? (
                 <div>

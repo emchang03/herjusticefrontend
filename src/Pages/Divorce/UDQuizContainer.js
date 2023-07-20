@@ -135,7 +135,7 @@ const QuizContainer = () => {
     return(
         <div className="launch-quiz">
         <h1>Divorce Case Best Estimate</h1>
-                <p className="long-desc">Answer these questions to the best of your ability for our best prediction of what might be going on with your case. This is not a definitive answer, just a best estimate. <span style={{fontWeight: "bold"}}>Please note that you cannot go back to change your answers. If you make a mistake, restart the quiz.</span> </p>
+                <p className="long-desc">Answer these questions to the best of your ability for our best prediction of what might be going on with your case. This is not a definitive answer, just a best estimate. <span style={{fontWeight: "bold"}}>Please note that you cannot go back to change your answers. If you make a mistake, refresh the page to restart the quiz.</span> </p>
 
         
         {!quizFinished ? (

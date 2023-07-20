@@ -16,17 +16,17 @@ const UVFQuizContainer = () => {
     const questions = [
         {
             // INDEX: 0
-            q: 'Has your attorney filed the paperwork?',
+            q: 'Has your attorney filed the paperwork with USCIS?',
             id: 0,
         },
         {
             // INDEX: 1
-            q: 'Have you or your attorney received receipts of filing?',
+            q: 'Have you or your attorney received receipt notices from USCIS?',
             id: 1,
         },
         {
             // INDEX: 2
-            q: 'Have you received notice of/fulfilled any biometrics requests?',
+            q: 'Have you received a notice to attend a biometrics appointment with USCIS?',
             id: 2,
         },
         {
@@ -45,12 +45,12 @@ const UVFQuizContainer = () => {
         {
             // INDEX 1
             id: 1,
-            a: 'Expect to hear from the your attorney / the USCIS regarding fulfilling any biometric requirements. '
+            a: 'Expect to hear from your attorney / USCIS regarding fulfilling any biometrics requirements. '
         },
         {
             // INDEX 2
             id: 2,
-            a: 'You can now periodically check the USCIS Processing Times to see the updates in your I-918 processing. Expect your attorney to check in every 3-4 months. You are also eligible to use the quiz for those who have already filed their U-Visa forms.'
+            a: 'There is likely going to be nothing happening in your case for a few years because USCIS processing times are very long at this stage of the case. You can periodically check the USCIS website for average case processing times to see how long it is taking USCIS to process U-Visa cases. It is important to maintain contact with your attorney periodically during this time.'
         },
         {
             // INDEX 3
@@ -65,7 +65,7 @@ const UVFQuizContainer = () => {
         {
             // INDEX 5
             id: 3,
-            a: 'Your attorney is likely finalizing documents. You will probably be asked to come in soon to sign all the forms so that they can be filed with the USCIS.'
+            a: 'Your attorney is likely finalizing documents. You will probably be asked to come in soon to sign all the forms so that they can be filed with USCIS.'
         }
     ]
     const handleChange = (e) => { 
@@ -138,8 +138,8 @@ const UVFQuizContainer = () => {
 
     return(
         <div className="launch-quiz">
-            <h1>U-Visa Filing Case Best Estimate</h1>
-            <p className="long-desc">Answer these questions to the best of your ability for our best prediction of what might be going on with your case. This is not a definitive answer, just a best estimate. <span style={{fontWeight: "bold"}}>Please note that you cannot go back to change your answers. If you make a mistake, restart the quiz.</span></p>
+            <h1>What might be happening with my U-Visa case?</h1>
+            <p className="long-desc">Answer these questions to the best of your ability to understand what might be going on with your case. This is not a definitive answer, just a best estimate. <span style={{fontWeight: "bold"}}>Please note that you cannot go back to change your answers. If you make a mistake, refresh the page to restart the quiz.</span></p>
             {!quizFinished ? (
                 <div>
                     <UVFQuestion 

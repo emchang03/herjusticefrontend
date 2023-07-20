@@ -47,7 +47,11 @@ const Home  = () => {
         <div className="center-container">
             <div>
                 <h1> Welcome to the Client Case Navigator Tool </h1>
-                <p className="long-desc"> This Her Justice tool is meant to promote transparency during your case processing. Click on your specific case and answer a few simple questions to get our best estimate of where your case is in the processing timeline. </p>
+                <p className="long-desc"> This Her Justice tool is meant to promote transparency during your case processing. Click on your specific case type and answer a few simple questions to get our best estimate of where your case is in the processing timeline. <span style={{fontWeight: "bold"}}>This tool is meant for informational purposes only. Clicking on and exploring this page will not impact or speed up your case in any way.</span> At this time, the tool only has the case type of Uncontested Divorce and U Nonimmigrant Status ("U-Visas").</p>
+
+                <p className="long-desc" style={{fontSize:"smaller"}}>
+                Disclaimer: This tool is not provided by any governmental agency. It is provided by Her Justice, a non-profit organization, and it is only meant for clients receiving services from Her Justice.
+                </p>
             </div>
                 
 
