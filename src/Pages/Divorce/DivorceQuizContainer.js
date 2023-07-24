@@ -13,6 +13,8 @@ const QuizContainer = () => {
     const navigate = useNavigate();
     
 
+
+    // EDIT HERE: 
     const questions = [
         {
             q: 'Has your attorney filed the initial divorce documents?',
@@ -32,26 +34,28 @@ const QuizContainer = () => {
         },
     ];
 
+
+    // EDIT HERE: 
     const answers = [
         {
             id: 0,
             a: 'Your attorney might be waiting on forms / waivers to be completed. Reach out to your attorney to ask about your specific status.',
-            delays: ["Attorney is waiting for client information to complete form", "Attorney is waiting for client to review form", "Attorney waiting for client signature and/or notary signing" ]
+            delays: [`Attorney is waiting for client information to complete form`, `Attorney is waiting for client to review form`, `Attorney waiting for client signature and/or notary signing` ]
         },
         {
             id: 1,
             a: 'Your attorney might be waiting for the Defendant to consent to the divorce (Affidavit of Defendant) or is waiting for the default period to elapse (Affidavit of Service) before proceeding. Reach out to your attorney to ask about your specific status.',
-            delays: ["Service on Defendant has not been effectuated", "Default period is a total of 41 days from date of service", "Defendant has contacted attorney but has not yet signed the Affidavit of Defendant" ]
+            delays: [`Service on Defendant has not been effectuated`, `Default period is a total of 41 days from date of service`, `Defendant has contacted attorney but has not yet signed the Affidavit of Defendant`]
         },
         {
             id: 2,
             a: 'If your attorney has not arranged a time to meet and sign final documents, you should reach out to do so now.',
-            delays: ["Attorney has not yet drafted the final documents", "Attorney is waiting for information from client to complete final documents" ]
+            delays: [`Attorney has not yet drafted the final documents`, `Attorney is waiting for information from client to complete final documents`]
         },
         {
             id: 3,
             a: 'Your attorney is likely still working on preparing, drafting, and reviewing your final paperwork.',
-            delays: ["Limited attorney capacity"]
+            delays: [`Limited attorney capacity`]
         },
         {
             id: 3,
@@ -134,8 +138,8 @@ const QuizContainer = () => {
 
     return(
         <div className="launch-quiz">
-        <h1>Divorce Case Best Estimate</h1>
-                <p className="long-desc">Answer these questions to the best of your ability for our best prediction of what might be going on with your case. This is not a definitive answer, just a best estimate. <span style={{fontWeight: "bold"}}>Please note that you cannot go back to change your answers. If you make a mistake, refresh the page to restart the quiz.</span> </p>
+        <h1>What might be happening with my Uncontested Divorce case?</h1>
+        <p className="long-desc">Answer these questions to the best of your ability. This is not a definitive answer, just a best estimate. <span style={{fontWeight: "bold"}}>Please note that you cannot go back to change your answers. If you make a mistake, refresh the page to restart the quiz.</span> </p>
 
         
         {!quizFinished ? (
@@ -161,7 +165,7 @@ const QuizContainer = () => {
             </div>
         )}
         <div className="link">
-        <Link to='/divorce' >Back to Divorce Page</Link>
+        <Link to='/divorce' >Back to Uncontested Divorce Page</Link>
         </div>
         </div>
     )

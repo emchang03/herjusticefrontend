@@ -40,12 +40,12 @@ const UVFQuizContainer = () => {
         {
             // INDEX 0
             id: 0,
-            a: 'Within the next 2 months, expect a meeting with your attorney to review receipts'
+            a: 'Within the next 2 months, expect a meeting with your attorney to review receipts.'
         },
         {
             // INDEX 1
             id: 1,
-            a: 'Expect to hear from your attorney / USCIS regarding fulfilling any biometrics requirements. '
+            a: 'Expect to hear from your attorney / USCIS regarding fulfilling any biometrics requirements.'
         },
         {
             // INDEX 2
@@ -139,7 +139,9 @@ const UVFQuizContainer = () => {
     return(
         <div className="launch-quiz">
             <h1>What might be happening with my U-Visa case?</h1>
-            <p className="long-desc">Answer these questions to the best of your ability to understand what might be going on with your case. This is not a definitive answer, just a best estimate. <span style={{fontWeight: "bold"}}>Please note that you cannot go back to change your answers. If you make a mistake, refresh the page to restart the quiz.</span></p>
+            <p className="long-desc">Answer these questions to the best of your ability. This is not a definitive answer, just a best estimate. <span style={{fontWeight: "bold"}}>Please note that you cannot go back to change your answers. If you make a mistake, refresh the page to restart the quiz.</span> </p>
+
+            
             {!quizFinished ? (
                 <div>
                     <UVFQuestion 

@@ -16,7 +16,7 @@ const Collapsible = (props) => {
            
             {open && (
                 <div className="toggle-expand">
-                    {props.children}
+                {props.children}
                 </div>
             )}
         </div>

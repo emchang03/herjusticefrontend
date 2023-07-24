@@ -2,7 +2,7 @@ import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements, N
 import React from 'react';
 import UVisa from './Pages/UVisaFiling/UVisa';
 import Divorce from './Pages/Divorce/Divorce';
-import QuizContainer from './Pages/Divorce/UDQuizContainer';
+import QuizContainer from './Pages/Divorce/DivorceQuizContainer';
 import Home from './Pages/Home';
 import Root from './Components/Root';
 import UVFQuizContainer from './Pages/UVisaFiling/UVFQuizContainer';

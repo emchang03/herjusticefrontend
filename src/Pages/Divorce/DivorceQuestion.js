@@ -33,5 +33,3 @@ const DivorceQuestion = ({question, handleChange, userInput}) => {
 
 export default DivorceQuestion; 
 
-
-// when this deletes, i have reached the original!! 

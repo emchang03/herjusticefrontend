@@ -8,11 +8,11 @@ const TimelineContainer = ({timelineItems}) => {
   const length = timelineItems.length;
 
   const goToPrevious = () => {
-    setCurrentIndex(currentIndex === 0 ? currentIndex : currentIndex-1);
+    setCurrentIndex(currentIndex === 0 ? currentIndex : currentIndex-3);
   };
 
   const goToNext = () => {
-    setCurrentIndex(currentIndex >= length-3 ? currentIndex : currentIndex+1);
+    setCurrentIndex(currentIndex > length-3 ? currentIndex+1 : currentIndex+3);
   }
 
 
@@ -22,9 +22,8 @@ const TimelineContainer = ({timelineItems}) => {
 
   return(
     <div className="carousel">
-     
       <div className="carousel-container">
-      <button className="prev-button" onClick={goToPrevious} disabled={currentIndex === 0}> Previous </button>
+      <button className="prev-button" onClick={goToPrevious} disabled={currentIndex === 0}> Back</button>
       {
         timelineItems.slice(currentIndex, currentIndex+3).map((item, index)=>{
           const isActive = index === currentIndex;
