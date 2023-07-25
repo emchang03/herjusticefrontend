@@ -51,6 +51,9 @@ h1, h2, h3, h4, h5{
   margin-right: auto;
 }
 
+.additional-resources{
+  margin-bottom: 3rem;
+}
 /*HOME PAGE*/
 
 .home-button{

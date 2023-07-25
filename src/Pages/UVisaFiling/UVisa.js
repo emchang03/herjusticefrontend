@@ -58,10 +58,7 @@ const UVisa  = () => {
               <TimelineContainer timelineItems={timeline} />
             </div>
 
-            <div>
-              <h1> Additional Resources </h1>
-              <a href="https://egov.uscis.gov/processing-times/">USCIS Case Processing Times Tool</a> 
-            </div>
+
 
 
             <div className="mainQuizComponent">
@@ -71,6 +68,14 @@ const UVisa  = () => {
               <br/>
               <button onClick={()=>{navigate('/uvisa-postfiling/quiz')}}> I have already filed</button>
             </div>
+
+
+            <div className="additional-resources">
+              <h3> Additional Resources </h3>
+              <a href="https://egov.uscis.gov/processing-times/">USCIS Case Processing Times Tool</a> 
+            </div>
+
+
         </div>
       
     )

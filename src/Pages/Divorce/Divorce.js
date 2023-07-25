@@ -57,18 +57,18 @@ const Divorce  = () => {
               <TimelineContainer timelineItems={timeline} />
             </div>
 
-            <div>
-              <h1> Additional Resources </h1>
-              <a href="https://iapps.courts.state.ny.us/webcivil/">New York ECourts - Uncontested Divorce Index Number Input</a> 
-              <br/>
-              <a href="https://herjustice.org/wp-content/uploads/2020/07/Divorce-2020.pdf">Her Justice Divorce Legal Guide</a> 
-            </div>
-
 
             <div className="mainQuizComponent">
               <h1> What is going on with my divorce case? </h1>
               <p className="subtitle">Remember that cases are subjected to many factors that can cause delays. </p>
               <button onClick={()=>{navigate('/divorce/quiz')}}>Launch Quiz</button>
+            </div>
+
+            <div className="additional-resources">
+              <h3> Additional Resources </h3>
+              <a href="https://iapps.courts.state.ny.us/webcivil/">New York ECourts - Uncontested Divorce Index Number Input</a> 
+              <br/>
+              <a href="https://herjustice.org/wp-content/uploads/2020/07/Divorce-2020.pdf">Her Justice Divorce Legal Guide</a> 
             </div>
 
 
