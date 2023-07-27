@@ -1,7 +1,7 @@
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements, Navigate } from 'react-router-dom';
 import React from 'react';
-import UVisa from './Pages/UVisaFiling/UVisa';
-import Divorce from './Pages/Divorce/Divorce';
+import UVisa from './Pages/UVisa';
+import Divorce from './Pages/Divorce';
 import QuizContainer from './Pages/Divorce/DivorceQuizContainer';
 import Home from './Pages/Home';
 import Root from './Components/Root';

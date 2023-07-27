@@ -40,7 +40,7 @@ const QuizContainer = () => {
         {
             id: 0,
             a: 'Your attorney might be waiting on forms / waivers to be completed. Reach out to your attorney to ask about your specific status.',
-            delays: [`Attorney is waiting for client information to complete form`, `Attorney is waiting for client to review form`, `Attorney waiting for client signature and/or notary signing` ]
+            delays: [`Attorney is waiting for client information to complete form`, `Attorney is waiting for client to review form`, `Attorney waiting for client signature and/or notary signing`]
         },
         {
             id: 1,
@@ -139,7 +139,7 @@ const QuizContainer = () => {
     return(
         <div className="launch-quiz">
         <h1>What might be happening with my Uncontested Divorce case?</h1>
-        <p className="long-desc">Answer these questions to the best of your ability. This is not a definitive answer, just a best estimate. <span style={{fontWeight: "bold"}}>Please note that you cannot go back to change your answers. If you make a mistake, refresh the page to restart the quiz.</span> </p>
+        <p className="long-desc">Answer these questions to the best of your ability. This is not a definitive answer, just a best estimate. <span style={{fontWeight: "bold"}}>Please note that you cannot go back to change your answers. If you make a mistake, refresh the page to restart the quiz.</span> If you do not know the answer, please talk to your attorney. </p>
 
         
         {!quizFinished ? (
