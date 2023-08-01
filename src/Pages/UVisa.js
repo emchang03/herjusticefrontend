@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import TimelineContainer from "../../Components/TimelineContainer";
+import TimelineContainer from "../Components/TimelineContainer";
 
 
 const UVisa  = () => {
@@ -51,7 +51,7 @@ const UVisa  = () => {
     ];
     return(
         <div className="center-container">
-            <div>
+            <div className="case-timeline">
               <h1> U-Visa Case Timeline</h1>
               <p className="subtitle">How Her Justice U-Visa Cases <span style={{fontWeight: "bold"}}>typically</span> progress</p>
               <p style={{fontWeight: "bold"}}>Please note that U-Certification expiration is 6 months from the date that it is signed. The U-Visa filing must be submitted to the U.S. Citizenship and Immigration Services (USCIS) before that time. </p>

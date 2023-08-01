@@ -137,7 +137,7 @@ const QuizContainer = () => {
     // }
 
     return(
-        <div className="launch-quiz">
+        <div className="launch-quiz center-container">
         <h1>What might be happening with my Uncontested Divorce case?</h1>
         <p className="long-desc">Answer these questions to the best of your ability. This is not a definitive answer, just a best estimate. <span style={{fontWeight: "bold"}}>Please note that you cannot go back to change your answers. If you make a mistake, refresh the page to restart the quiz.</span> If you do not know the answer, please talk to your attorney. </p>
 

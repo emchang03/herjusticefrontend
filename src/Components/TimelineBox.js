@@ -7,7 +7,6 @@ const TimelineBox = ({title, desc, duration, number}) => {
             <h2>{title}</h2>
             <p> {desc} </p>
             { duration ? (<p style={{fontWeight: "bold"}}> Average duration of this step: <br/> {duration} </p>) : <></>}
-            
         </div>
     )
 };

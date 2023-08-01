@@ -10,7 +10,7 @@ const UVPQuizContainer = () =>{
     const [curAnswer, setCurAnswer] = useState("blank");
     const [userInput, setUserInput] = useState([]); 
 
-
+     // EDIT HERE:
     const questions = [
         {
             q: 'Did you or your attorney receive a notice of a Bona Fide Determination?',
@@ -22,6 +22,7 @@ const UVPQuizContainer = () =>{
         }
     ];
 
+     // EDIT HERE:
     const answers=[
         {
             a: `This is a preliminary decision on your case. USCIS believes you are eligible for U-Nonimmigrant status, but they can still ask you for further information.`,
@@ -92,9 +93,9 @@ const UVPQuizContainer = () =>{
 
     
         return(
-            <div className="launch-quiz">
+            <div className="launch-quiz center-container">
                 <h1>What might be happening with my U-Visa case after filing?</h1>
-                <p className="long-desc">Answer these questions to the best of your ability. This is not a definitive answer, just a best estimate. <span style={{fontWeight: "bold"}}>Please note that you cannot go back to change your answers. If you make a mistake, refresh the page to restart the quiz.</span> </p>
+                <p className="long-desc">Answer these questions to the best of your ability. This is not a definitive answer, just a best estimate. <span style={{fontWeight: "bold"}}>Please note that you cannot go back to change your answers. If you make a mistake, refresh the page to restart the quiz.</span> If you do not know the answer, please talk to your attorney.</p>
 
                 {!quizFinished ? (
                 <div>

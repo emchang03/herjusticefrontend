@@ -12,7 +12,7 @@ const UVFQuizContainer = () => {
     const [userInput, setUserInput] = useState([]); 
     const navigate = useNavigate();
     
-
+    // EDIT HERE:
     const questions = [
         {
             // INDEX: 0
@@ -35,7 +35,7 @@ const UVFQuizContainer = () => {
             id: 3,
         },
     ];
-
+    // EDIT HERE:
     const answers = [
         {
             // INDEX 0
@@ -137,9 +137,9 @@ const UVFQuizContainer = () => {
 
 
     return(
-        <div className="launch-quiz">
+        <div className="launch-quiz center-container">
             <h1>What might be happening with my U-Visa case?</h1>
-            <p className="long-desc">Answer these questions to the best of your ability. This is not a definitive answer, just a best estimate. <span style={{fontWeight: "bold"}}>Please note that you cannot go back to change your answers. If you make a mistake, refresh the page to restart the quiz.</span> </p>
+            <p className="long-desc">Answer these questions to the best of your ability. This is not a definitive answer, just a best estimate. <span style={{fontWeight: "bold"}}>Please note that you cannot go back to change your answers. If you make a mistake, refresh the page to restart the quiz.</span> If you do not know the answer, please talk to your attorney. </p>
 
             
             {!quizFinished ? (

@@ -12,7 +12,7 @@ function Root() {
  <div className='main'>
  <Header />
      <Outlet />   
-    </div>
+</div>
    
   );
 }

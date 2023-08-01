@@ -7,6 +7,7 @@ import Home from './Pages/Home';
 import Root from './Components/Root';
 import UVFQuizContainer from './Pages/UVisaFiling/UVFQuizContainer';
 import UVPQuizContainer from './Pages/UVisaPostFiling/UVPQuizContainer';
+import FaqPage from './Pages/Faq';
 
 
 const router = createBrowserRouter(createRoutesFromElements(
@@ -18,6 +19,7 @@ const router = createBrowserRouter(createRoutesFromElements(
     <Route path= '/uvisa-filing' element={ <UVisa />}/>
     <Route path= '/uvisa-filing/quiz' element={ <UVFQuizContainer />}/>
     <Route path= '/uvisa-postfiling/quiz' element={ <UVPQuizContainer/>}/>
+    <Route path='/faq' element={<FaqPage/>}/>
 </Route>
 ));
 
